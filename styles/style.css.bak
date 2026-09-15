@@ -196,7 +196,6 @@ article {
 	padding-left: 24px;
 	padding-right: 24px;
 	min-height: 595px;
-	margin-bottom: 180px;
 }
 
 .about-column__logo {
