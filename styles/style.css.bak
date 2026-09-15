@@ -5,11 +5,12 @@ a {
 article {
 	height: 100%;
 }
+
 .header {
     display: grid;
     grid-template-columns: 1fr min-content 1fr;
     align-items: center;
-    padding: 92px 50px 96px;
+    padding: 92px 50px 92px;
 }
 
 .header__address {
@@ -29,9 +30,13 @@ article {
 .header__menu-list {
 	display: flex;
 	font-size: 18px;
-	gap: 30px;
+	gap: 33px;
 	list-style: circle;
 	padding: 0;
+}
+
+.menu-item {
+	font-size: 18px;
 }
 
 .menu-item:first-child {
@@ -40,7 +45,7 @@ article {
 
 .logo-link {
   display: block;
-  width: 150px;
+  width: 136px;
   height: auto;
 } 
 
@@ -59,21 +64,19 @@ article {
 .cover {
 	background-image: url(../images/cover.jpg);
 	min-height: 757px;
+	padding: 165px 50px 50px 50px;
 }
 
 .overlay {
 	background-color: rgb(0 0 0 / 0.6);
 	position: absolute;
-	width: 100%; 
+	width: 100%;
 	height: 100%;
 	z-index: 1;
 	inset: 0;
 }
 
 .cover__title {
-	padding-top: 165px;
-	padding-left: 50px;
-	padding-right: 50px;
 	z-index: 2;
 	position: relative;
 	font-size: 100px;
@@ -81,14 +84,19 @@ article {
 	letter-spacing: 0.3em;
 }
 
+.last-letter {
+	letter-spacing: 0;
+}
+
 .aligned-text {
-	display: grid;
+	display: flex;
 }
 .aligned-text_left {
     justify-self: start;
 }
 .aligned-text_center {
     justify-self: center;
+	margin-top: 17px;
 }
 .aligned-text_right {
     justify-self: end;
@@ -101,8 +109,7 @@ article {
 	font-size: 22px;
 	position: relative;
 	justify-content: space-between;
-	margin: 50px;
-	word-spacing: 20px;
+	word-spacing: 18.5px;
 	align-items: center;
 	
 }
@@ -112,7 +119,7 @@ article {
 	border: 1px solid white;
 	cursor: pointer;
 	text-transform: uppercase;
-	padding: 10px 20px;
+	padding: 11px 31px;
 	color: white;
 }
 
@@ -187,11 +194,11 @@ article {
 
 .about {
 	display: grid;
-	grid-template-columns: 1fr 2fr;
-	gap: 72px;
+	grid-template-columns: 334px 1fr;
+	gap: 25px;
 	padding-top: 35px;
-	padding-left: 24px;
-	padding-right: 24px;
+	margin-left: 24px;
+	margin-right: 24px;
 	min-height: 595px;
 	margin-bottom: 180px;
 }
@@ -237,7 +244,6 @@ article {
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
     padding-left: 50px;
 	padding-right: 50px;
 	margin-bottom: 82px;
@@ -256,7 +262,7 @@ article {
 
 .footer__social-list {
 	display: flex;
-	gap: 50px;
+	gap: 48px;
 	list-style: none;
 	justify-self: end;
 }
