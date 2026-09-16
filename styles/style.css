@@ -259,6 +259,10 @@ article {
 	padding: 0;
 }
 
+.footer__menu-link_active {
+	text-decoration: none;
+}
+
 .footer__address {
     justify-self: start;
 }
